@@ -35,7 +35,7 @@ pipeline {
         stage('Deploy to S3') {
             steps {
                 sh '''
-                    aws s3 sync build/ s3://$my-react-app-dev-001 --delete
+                    aws s3 sync build/ s3://$BUCKET_NAME --delete
                 '''
             }
         }

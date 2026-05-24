@@ -18,6 +18,7 @@ const ProductPage: React.FC = () => {
 
 
     return (<>
+      <h1>Hi this is the Product Page</h1>
         <NavBar products={filteredProducts} setQuery={setQuery} query={query} show={{ search: true, dropDown: true }} />
         <ProductList products={filteredProducts} />
     
